@@ -157,18 +157,18 @@ position: sticky;
 /* 2й экран */
 .okno2{
     width: 100%;
-    height: 1451px;
+    height: 1000px;
 }
-.k{
+.okno2_h1{
     text-align: center;
     margin-top: 5%;
 }
-.ss{
+.okno2_s1{
     text-align: center;
     height: 150px;
     font-size: 2em;
 }
-.op{
+.okno2_s2{
     text-align: center;
     height: 20%;
     width: 20%;
@@ -177,14 +177,14 @@ position: sticky;
     font-weight: bold;
     line-height: 1.5em
 }
-.mm{
+.okno2_footer{
     width: 100%;
     height: 508px;
     position: relative;
     margin-top: 10%;
     display: flex;
 }
-.de{
+.okno2_div1{
     width: 60%;
     height: 100%;
     display: inline-block;
@@ -193,20 +193,21 @@ position: sticky;
     grid-template-rows: repeat(10,10%);
 }
 @media (max-width: 966px){
-    .de{
+    .okno2_div1{
         display: none;
     }
 }
     
 
-.xx{
+.okno2_i1{
     z-index: 1;
     grid-column: 2/4;
     grid-row: 1/3;
     height: 400%;
    width: 300%;
 }
-.rr{
+
+.okno2_i2{
     z-index: 2;
     position: relative;
     height: 300%;
@@ -215,28 +216,28 @@ position: sticky;
     grid-row: 5/7;
     grid-column: 4/6;
 }
-.as{
+.okno2_div2{
     display: inline-block;
     width: 40%;
-    margin: 0;
+    margin-left: 10%;
 }
 @media (max-width: 966px){
-    .as{
+    .okno2_div2{
         width: 100%;
         text-align: center;
     }
 }
   
-.bb{
+.okno2_p1{
     font-weight: bolder;
     font-size: 1.5em;
     line-height: 1.2em
 }
-.lf{
+.okno2_p2{
 font-weight: bold;
 line-height: 1.5em
 }
-.ff{
+.okno2_bat{
     background-image: linear-gradient(to bottom right, #EBBE9C, #C88C61);
     height: 15%;
     width: 50%;
@@ -244,17 +245,64 @@ line-height: 1.5em
     border: none;
     box-shadow:0 0 50px #C88C61;
     position: sticky;
+    top: 0;
     color: white;
     font-size: 1.2em;
 }
 @media (max-width: 966px){
-    .ff{
-        width: 30%;
-        
+    .okno2_bat{
+        width: 30%;}
     }
-}
-.cc{
+.okno2_a{
     color: white;
     text-decoration: none;
-    
 }
+
+  /* 3й экран */
+  .okno3{
+      width: 100%;
+      height: 850px;
+    }
+    .okno3_top, .okno3_niz{
+        background-color: #363348;
+        color: white;
+        
+    }
+    .okno3_top{
+        margin-top: 5%;
+    }
+    .okno3_d1{
+        width: 100%;
+        background-image: url(/IMG/photo3.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 80%;
+        background-attachment:fixed;
+        text-align: center;
+    }
+    .okno3_h1{
+        color: rgb(30, 255, 0);  
+        text-align: center;
+        animation-name: okno3_h1;
+        animation-duration: 1s;
+        animation-iteration-count: infinite;
+        animation-direction: reverse;
+    }
+    @keyframes okno3_h1{
+
+        50% {color: rgb(255, 0, 0)}
+    }
+
+    .okno3_p1{
+        color: white;
+        font-size: 1.3em;
+        background-color: rgba(0, 0, 0, 0.3);
+        display: inline-block;
+        text-align: center;
+        font-weight: bold;
+        line-height: 140%;
+    }
+    .okno3_p2{
+        font-size: 2em;
+        text-align: center;
+    }
