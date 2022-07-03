@@ -2,6 +2,7 @@
 body{
     margin: 0;
 }
+/* 1й экран */
 .okno1{
     width: 100%;
     height: 849px;
@@ -107,19 +108,23 @@ position: sticky;
     background-repeat: no-repeat;
     background-size: cover;
     width: 96%;
-    height: 100%;
+    height: 683px;
     margin-top: 2%;
     margin-left: 2%;
     margin-right: 2%;
     display: flex;
     align-items: center;
     justify-content: center;
-    
 }
+
 
 .okno1_div6{
     white-space: nowrap;
     font-size: 2em;
+}
+@media (max-width: 518px) {
+    .okno1_div6 { font-size: 0.7em;
+    }
 }
 
 .okno1_p3{
@@ -139,7 +144,7 @@ position: sticky;
     transition-property: all;
 }
 @media (max-width: 518px) {
-    .okno1_p4 { font-size: 0.9em;
+    .okno1_p4 { display: none;
     }
 }
 .strelka{
@@ -149,4 +154,107 @@ position: sticky;
     margin-top: 20%;
     transition-property: all;
 }
+/* 2й экран */
+.okno2{
+    width: 100%;
+    height: 1451px;
+}
+.k{
+    text-align: center;
+    margin-top: 5%;
+}
+.ss{
+    text-align: center;
+    height: 150px;
+    font-size: 2em;
+}
+.op{
+    text-align: center;
+    height: 20%;
+    width: 20%;
+    font-size: 1em;
+    font-style: black;
+    font-weight: bold;
+    line-height: 1.5em
+}
+.mm{
+    width: 100%;
+    height: 508px;
+    position: relative;
+    margin-top: 10%;
+    display: flex;
+}
+.de{
+    width: 60%;
+    height: 100%;
+    display: inline-block;
+    display: grid;
+    grid-template-columns: repeat(10,10%);
+    grid-template-rows: repeat(10,10%);
+}
+@media (max-width: 966px){
+    .de{
+        display: none;
+    }
+}
+    
 
+.xx{
+    z-index: 1;
+    grid-column: 2/4;
+    grid-row: 1/3;
+    height: 400%;
+   width: 300%;
+}
+.rr{
+    z-index: 2;
+    position: relative;
+    height: 300%;
+    width: 300%;
+    display: inline-block;
+    grid-row: 5/7;
+    grid-column: 4/6;
+}
+.as{
+    display: inline-block;
+    width: 40%;
+    margin: 0;
+}
+@media (max-width: 966px){
+    .as{
+        width: 100%;
+        text-align: center;
+    }
+}
+  
+.bb{
+    font-weight: bolder;
+    font-size: 1.5em;
+    line-height: 1.2em
+}
+.lf{
+font-weight: bold;
+line-height: 1.5em
+}
+.ff{
+    background-image: linear-gradient(to bottom right, #EBBE9C, #C88C61);
+    height: 15%;
+    width: 50%;
+    border-radius: 10%;
+    border: none;
+    box-shadow:0 0 50px #C88C61;
+    position: sticky;
+    color: white;
+    font-size: 1.2em;
+}
+@media (max-width: 966px){
+    .ff{
+        width: 30%;
+        
+    }
+}
+.cc{
+    color: white;
+    text-decoration: none;
+    
+}
