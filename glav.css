@@ -306,3 +306,85 @@ line-height: 1.5em
         font-size: 2em;
         text-align: center;
     }
+     /* 4й экран */
+     .okno4{
+        width: 100%;
+        height: 900px;
+        text-align: center;
+     }
+     .okno4_div1{
+         width: 100%;
+         height: 280px;
+         display: grid;
+         grid-auto-columns: repeat(15,1fr);
+         grid-template-rows: repeat(10,28px);
+     }
+     @media (max-width: 1134px){
+        .okno4_div1{
+            display: none;}
+        }
+    .okno
+     .o1{
+         grid-column-start: 2;
+         grid-column-end: 5;
+     }
+   
+     .o2{
+        grid-column-start: 5;
+        grid-column-end: 8;
+        grid-row-start: 2;
+    }
+    .o2:hover{
+        transform: scale(2);
+        z-index: 2;
+    }
+    .o3{
+        grid-column-start: 8;
+        grid-column-end: 11;
+
+    }
+    .o3:hover{
+        transform: scale(2);
+        z-index: 2;
+    }
+    .o4{
+        grid-column-start: 11;
+        grid-column-end: 14;
+        grid-row-start: 2;
+    }
+    
+    .okno4_bat{
+        background-image: linear-gradient(to bottom right, #EBBE9C, #C88C61);
+        height: 100px;
+        width: 300px;
+        border-radius: 10%;
+        border: none;
+        box-shadow:0 0 50px #C88C61;
+        position: sticky;
+        top: 0;
+        color: white;
+        font-size: 1.2em;
+        margin-top: 10%;
+    }
+    .okno4_div2{
+        text-align: left;
+        margin-top: 10%;
+    }
+    .okno4_div3{
+        display: inline-block;
+        font-size: 1.8em;
+        width: 45%;
+        text-align: left;
+        vertical-align: top;
+        padding-left: 14%;
+    }
+    .okno4_s1{
+        width: 40%;
+    }
+    .okno4_div4{
+        display: inline-block;
+        font-size: 1em;
+        width: 40%;
+        line-height: 130%;
+        font-weight: bold;
+    }
