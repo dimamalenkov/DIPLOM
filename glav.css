@@ -1,6 +1,16 @@
 
+html{
+    
+    height: 10000px
+}
 body{
     margin: 0;
+    background: linear-gradient(rgb(255, 255, 255), rgb(54, 56, 54)), no-repeat;
+    
+    height: 10000px;
+   
+    text-align: center;
+    
 }
 /* 1й экран */
 .okno1{
@@ -70,9 +80,30 @@ position: sticky;
     text-decoration: none;
     transition-property: all;
 }
+@media (max-width: 634px) {
+    .okno1_a { font-size: 10px;
+        text-align: right;
+    }
+}
+@media (max-width: 444px) {
+    .okno1_a { font-size: 7px;
+        text-align: right;
+        position: relative;
+        margin-left: 10%;
+    }
+}
+@media (max-width: 349px) {
+    .okno1_a { font-size: 5px;
+        text-align: right;
+        margin-left: 10%;
+        position: relative;
+        word-wrap: break-word;
+    }
+}
 .okno1_a:hover{
-    color: rgb(0, 255, 21);
-    font-size: 1.1em;
+    color: rgb(255, 153, 0);
+    font-size: 0.8em;
+    text-decoration: underline
 }
 .okno1_a:active{
     color: yellow;
@@ -80,12 +111,14 @@ position: sticky;
 .okno1_tel1{
     margin-left: 200px;
     white-space: nowrap;
-    color: white;
+    color: rgb(255, 196, 0);
     transition-property: all;
+    text-decoration: none;
+    
 }
 .okno1_tel1:hover{
-    color: rgb(255, 0, 0);
-    font-size: 1.6em;
+    text-shadow:0 0 10px rgb(255, 196, 0),0 0 20px rgb(255, 196, 0);
+    
 }
 @media (max-width: 1017px) {
     .okno1_tel1 { margin-left: 40px;
@@ -107,11 +140,11 @@ position: sticky;
     background-image: url(./IMG/banner.png);
     background-repeat: no-repeat;
     background-size: cover;
-    width: 96%;
+    width: 95%;
     height: 683px;
     margin-top: 2%;
-    margin-left: 2%;
-    margin-right: 2%;
+    margin-left: auto;
+    margin-right: auto;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -158,6 +191,7 @@ position: sticky;
 .okno2{
     width: 100%;
     height: 1000px;
+    text-align: center;
 }
 .okno2_h1{
     text-align: center;
@@ -183,6 +217,9 @@ position: sticky;
     position: relative;
     margin-top: 10%;
     display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
 }
 .okno2_div1{
     width: 60%;
@@ -219,7 +256,7 @@ position: sticky;
 .okno2_div2{
     display: inline-block;
     width: 40%;
-    margin-left: 10%;
+    
 }
 @media (max-width: 966px){
     .okno2_div2{
@@ -237,26 +274,28 @@ position: sticky;
 font-weight: bold;
 line-height: 1.5em
 }
-.okno2_bat{
-    background-image: linear-gradient(to bottom right, #EBBE9C, #C88C61);
-    height: 15%;
-    width: 50%;
-    border-radius: 10%;
-    border: none;
-    box-shadow:0 0 50px #C88C61;
-    position: sticky;
-    top: 0;
-    color: white;
-    font-size: 1.2em;
-}
-@media (max-width: 966px){
-    .okno2_bat{
-        width: 30%;}
-    }
+
 .okno2_a{
+    display: inline-block;
     color: white;
+    font-size: 1.5em;
     text-decoration: none;
+    background-image: linear-gradient(to bottom right, #EBBE9C, #C88C61);
+    position: sticky;
+    top:0;
+    padding: 7% 18% 7% 18%;
+    border-radius: 100%;
+    text-shadow:0 0 10px rgb(0, 0, 0),0 0 20px rgb(0, 0, 0),0 0 30px rgb(0, 0, 0);
+    margin-top: 0
 }
+.okno2_a:hover{
+    background-image: linear-gradient(to bottom right, #b89ceb, #8561c8);
+    text-align: center;
+    font-size: 2em;
+    box-shadow:inset -5px -5px 5px 0 rgba(0,0,0,.5), 
+             inset 5px 5px 5px 0 rgba(255,255,255,0.5);
+}
+
 
   /* 3й экран */
   .okno3{
@@ -266,14 +305,28 @@ line-height: 1.5em
     .okno3_top, .okno3_niz{
         background-color: #363348;
         color: white;
-        
+        width: 95%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    @media (max-width: 966px){
+        .okno3_top{
+            font-size: 0.5em;
+        }
+    }
+    @media (max-width: 966px){
+        .okno3_niz{
+            font-size: 0.5em;
+        }
     }
     .okno3_top{
         margin-top: 5%;
     }
     .okno3_d1{
-        width: 100%;
-        background-image: url(/IMG/photo3.png);
+        width: 95%;
+        margin-left: auto;
+        margin-right: auto;
+        background-image: url(./IMG/photo3.png);
         background-repeat: no-repeat;
         background-size: cover;
         height: 80%;
@@ -302,6 +355,12 @@ line-height: 1.5em
         font-weight: bold;
         line-height: 140%;
     }
+    @media (max-width: 490px){
+        .okno3_p1{
+           font-size: 1.1em;
+        
+    }
+        }
     .okno3_p2{
         font-size: 2em;
         text-align: center;
@@ -309,9 +368,17 @@ line-height: 1.5em
      /* 4й экран */
      .okno4{
         width: 100%;
-        height: 900px;
+        height: 850px;
         text-align: center;
      }
+     @media (max-width: 1135px){
+        .okno4{
+            height: 60%;}
+        }
+        @media (max-width: 409px){
+            .okno4{
+                height: 50%;}
+            }
      .okno4_div1{
          width: 100%;
          height: 280px;
@@ -323,15 +390,15 @@ line-height: 1.5em
         .okno4_div1{
             display: none;}
         }
-    .okno
+    
      .o1{
-         grid-column-start: 2;
-         grid-column-end: 5;
+         grid-column-start: 1;
+         grid-column-end: 4;
      }
    
      .o2{
-        grid-column-start: 5;
-        grid-column-end: 8;
+        grid-column-start: 4;
+        grid-column-end: 7;
         grid-row-start: 2;
     }
     .o2:hover{
@@ -339,8 +406,8 @@ line-height: 1.5em
         z-index: 2;
     }
     .o3{
-        grid-column-start: 8;
-        grid-column-end: 11;
+        grid-column-start: 7;
+        grid-column-end: 10;
 
     }
     .o3:hover{
@@ -348,28 +415,40 @@ line-height: 1.5em
         z-index: 2;
     }
     .o4{
-        grid-column-start: 11;
-        grid-column-end: 14;
+        grid-column-start: 10;
+        grid-column-end: 13;
         grid-row-start: 2;
     }
     
-    .okno4_bat{
-        background-image: linear-gradient(to bottom right, #EBBE9C, #C88C61);
-        height: 100px;
-        width: 300px;
-        border-radius: 10%;
-        border: none;
-        box-shadow:0 0 50px #C88C61;
-        position: sticky;
-        top: 0;
+    .okno2_a2{
+        display: inline-block;
         color: white;
-        font-size: 1.2em;
-        margin-top: 10%;
+        font-size: 1.8em;
+        text-decoration: none;
+        background-image: linear-gradient(to bottom right, #EBBE9C, #C88C61);
+        
+        top:0;
+        padding: 4% 13% 4% 13%;
+        border-radius: 100%;
+        text-shadow:0 0 10px rgb(0, 0, 0),0 0 20px rgb(0, 0, 0),0 0 30px rgb(0, 0, 0);
+        margin-top: 5%
+    }
+    .okno2_a2:hover{
+        background-image: linear-gradient(to bottom right, #b89ceb, #8561c8);
+        text-align: center;
+        font-size: 2em;
+        box-shadow:inset -5px -5px 5px 0 rgba(0,0,0,.5), 
+             inset 5px 5px 5px 0 rgba(255,255,255,0.5);
     }
     .okno4_div2{
         text-align: left;
         margin-top: 10%;
     }
+    @media (max-width: 1265px){
+        .okno4_div2{
+            text-align: center;
+        }
+        }
     .okno4_div3{
         display: inline-block;
         font-size: 1.8em;
@@ -378,13 +457,164 @@ line-height: 1.5em
         vertical-align: top;
         padding-left: 14%;
     }
+    @media (max-width: 1265px){
+        .okno4_div3{
+            font-size: 1.5em;
+           
+            padding-left: 0 ;
+            text-align: center;
+            
+        }
+        }
     .okno4_s1{
         width: 40%;
     }
+    @media (max-width: 409px){
+        .okno4_s1{
+            font-size: 0.7em;
+            width: 94%;
+            padding-left: auto;
+            padding-right: auto;
+            
+            
+        }
+        }
     .okno4_div4{
         display: inline-block;
         font-size: 1em;
         width: 40%;
-        line-height: 130%;
+        
         font-weight: bold;
     }
+    @media (max-width: 409px){
+        .okno4_div4{
+            font-size: 0.7em;
+            
+            padding-left: auto;
+            padding-right: auto;
+        }
+        }
+    
+  
+    .video {
+        margin-top: 3%;
+        width: 95vw;
+        height: 60vh;
+        margin-left: auto;
+        margin-right: auto;
+       
+         
+    }
+      /* 5й экран */
+    .okno5{
+        width: 95%;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+    .okno5_i1{
+        max-width: 450px;
+       width: 100%;
+       margin-right: 8%;
+    }
+    li::first-letter{
+        color: red;
+    }
+    @media (max-width: 1070px){
+        .okno5_i1{
+       
+       margin-right: 0%
+     }
+        }
+    @media (max-width: 524px){
+        .okno5_i1{
+       max-width: 250px;
+       width: 100%;
+       margin-right: 0%
+     }
+        }
+
+    .okno5_i2{
+        position: relative;
+        top: 50px;
+        max-width: 450px;
+        width: 100%;
+    }
+    @media (max-width: 1070px){
+        .okno5_i2{
+       
+       margin-right: 0%
+     }
+        }
+    @media (max-width: 524px){
+        .okno5_i2{
+            max-width: 250px;
+            width: 100%;
+            top: 0px;
+            margin-right: auto;
+            margin-left: auto;
+            position: static;
+     }
+        }
+
+    .okno5_p1{
+        text-align: left;
+        display: inline-block;
+        font-weight: bold;
+        line-height: 150%;
+    }
+    .okno5_d1{
+        text-align: left;
+        display: flex;
+        justify-content: center;
+    }
+    .okno5_li{
+        margin-top: 30px;
+        font-weight: bold;
+        font-size: 0.9em;
+    }
+      /* 6й экран */
+      .okno6{
+        width: 85%;
+        text-align: left;
+        margin: 0 auto;
+        display: flex;
+        max-width: 1119px;
+        margin-top: 2%;
+        font-weight: bold;
+        background-color: rgb(24, 182, 182);
+        background-size: contain;
+        word-wrap: break-word;
+    }
+      .okno6_d1{
+          display: inline-block;
+          vertical-align: top;
+          text-align: left;
+          max-width: 692px;
+          width: 95%;
+          padding-left: 3%;
+      }
+      @media (max-width: 1070px){
+        .okno6_d1{
+            width: 100%;
+            max-width: 1070px;
+     }
+        }
+      .okno6_d2{
+        display: inline-block;
+        width: 15%;
+        vertical-align: center;
+        margin: 0 auto;
+    }
+    @media (max-width: 1070px){
+        .okno6_d2{
+            display: none;
+     }
+        }
+    .okno6_i1{
+        width: 100%;
+        padding-left: 10%;
+        font-size: 1em;
+        padding-top: 20%;
+    }
+    
