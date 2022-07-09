@@ -5,7 +5,7 @@ html{
 }
 body{
     margin: 0;
-    background: linear-gradient(rgb(255, 208, 0), rgb(255, 0, 0)), no-repeat;
+    background: linear-gradient(rgb(255, 217, 0), rgb(255, 0, 0)), no-repeat;
     
     height: 10000px;
    
@@ -738,3 +738,99 @@ line-height: 1.5em
             display: none;
         }
         }
+        @media (max-width: 620px){
+            .flower{
+                opacity: 0.4;
+            }
+            }
+
+        /* 8й экран */
+        .okno8{
+            margin-top: 4%;
+            margin-right:auto;
+            margin-left: auto;
+            width: 95%;
+            height: 100px;
+            max-width: 1119px;
+            text-align: left;
+            font-weight: bold;
+        }
+        .okno8_p1{
+            font-size: 2em;
+            color: white;
+        }
+        @media (max-width: 420px){
+            .okno8_p1{
+                font-size: 1em;
+            }
+            }
+        .okno8_div1{
+            
+            display: grid;
+            grid-template-columns: 15% 15% 15% 15% 15%;
+            grid-gap: 5%;
+            margin-top: 5%;
+            
+        }
+        .okno8_div2{
+            
+            display: inline-block;
+        }
+        .okno8_div3{
+            background-image: url(./IMG/01.png);
+            background-repeat: no-repeat;
+            background-size:30%;
+            background-position-x: center;
+            height: 70%;
+        }
+        #nomer2{
+            background-image: url(./IMG/02.png);
+            background-repeat: no-repeat;
+            background-size:30%;
+            background-position-x: center;
+            height: 70%;
+        }
+        #nomer3{
+            background-image: url(./IMG/03.png);
+            background-repeat: no-repeat;
+            background-size:30%;
+            background-position-x: center;
+            height: 70%;
+        }
+        #nomer4{
+            background-image: url(./IMG/04.png);
+            background-repeat: no-repeat;
+            background-size:30%;
+            background-position-x: center;
+            height: 70%;
+        }
+        #nomer5{
+            background-image: url(./IMG/05.png);
+            background-repeat: no-repeat;
+            background-size:30%;
+            background-position-x: center;
+            height: 70%;
+        }
+        .okno8_s1{
+            color: rgba(60, 255, 0, 0.623) ;
+        }
+        @media (max-width: 698px){
+            .okno8_s1{
+                font-size: 0.5em;
+            }
+            }
+            #li::first-letter{
+                color: rgb(0, 255, 157);
+                font-size: 1.3em;
+            }
+            @media (max-width: 420px){
+                .okno8_div1{
+                    display: none;
+                }
+                }
+            @media (min-width: 420px){
+                .spis{
+                    display: none;
+                }
+                }
+            
