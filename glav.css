@@ -5,7 +5,7 @@ html{
 }
 body{
     margin: 0;
-    background: linear-gradient(rgb(255, 255, 255), rgb(54, 56, 54)), no-repeat;
+    background: linear-gradient(rgb(255, 208, 0), rgb(255, 0, 0)), no-repeat;
     
     height: 10000px;
    
@@ -515,7 +515,7 @@ line-height: 1.5em
     .okno5_i1{
         max-width: 450px;
        width: 100%;
-       margin-right: 8%;
+       margin-right: 5%;
     }
     li::first-letter{
         color: red;
@@ -617,4 +617,124 @@ line-height: 1.5em
         font-size: 1em;
         padding-top: 20%;
     }
+    /* 7й экран */
+    .okno7{
+        max-width: 1118px;
+        width: 85%;
+        word-wrap: break-word;
+        margin: 0 auto;
+        margin-top: 2%;
+    }
+    .okno7_top{
+        width: 100%;
+        height: 50%;
+        text-align: left;
+        font-weight: bold;
+        display: flex;
+        align-items: center
+    }
+    .okno7_d1{
+        align-items: center;
+        display: inline-block;
+        height: 100%;
+        width: 30%;
+        margin-left: 4%;
+        font-weight: 10%;
+        display: flex;
+        align-items: flex-start;
+        
+    }
+    .okno7_s1{
+        display: inline-block;
+    }
+    @media (max-width: 605px){
+        .okno7_d1{
+           display: none;
+     }
+     .oval{
+         text-align: top;
+     }
+        }
+    @media (max-width: 605px){
+        .okno7_h1{
+            font-size: 1em;
+            padding-left: 10%;
+     }
+        }
+    .okno7_right{
+        display: inline-block;
+        width: 64%;
+        margin-left: 4%;
+    }
+    .okno7_p1{
+        font-size: 0.9em;
+    }
     
+    .flower1{
+        width: 140%;
+        height: 90%;
+        min-width: 472px;
+        grid-column-start: 1;
+        grid-row-start: 2;
+        padding-top: 15%;
+        padding-left: 13%;
+        display: inline-block;
+    }
+   
+
+    .okno7_h2{
+        text-align: left;
+        display: inline-block;
+        padding-top: 20%;
+        margin: 0;
+        grid-row-start: 1;
+        grid-column-start: 2;
+    }
+    @media (max-width: 985px){
+        .okno7_h2{
+            display: none;
+        }
+        }
+        @media (min-width: 985px){
+            .okno7_h2{
+                display: inline-block;
+            }
+            }
+    .okno7_p2{
+        grid-row-start: 1;
+        grid-column-start: 2;
+        font-weight: bold;
+        text-align: left;
+        margin: 0;
+        display: inline-block;
+        padding-top: 60%;
+    }
+    @media (max-width: 985px){
+        .okno7_p2{
+            display: none;
+        }
+        }
+
+    .okno7_d2{
+        display: inline-block;
+        width: 50%;
+        padding: 0%;
+        
+    }
+    .okno7_niz{
+        width: 100%;
+        height: 50%;
+        display: grid;
+       
+    }
+    .flower{
+        position: absolute;
+        grid-column-start: 1;
+        grid-row-start: 1;
+        z-index: 1;
+    }
+    @media (max-width: 620px){
+        .flower1{
+            display: none;
+        }
+        }
